@@ -35,5 +35,16 @@ const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => {
 }
 
 
+//problem 5
+interface BookInterface {
+    title: string,
+    author: string,
+    publishedYear: number,
+}
 
-
+const toggleReadStatus = (bookObj: BookInterface): BookInterface & { isRead: boolean } => {
+    return {
+        ...bookObj,
+        isRead: true,
+    };
+};
