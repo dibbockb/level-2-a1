@@ -50,6 +50,7 @@ const toggleReadStatus = (bookObj: BookInterface): BookInterface & { isRead: boo
 };
 
 
+
 //problem 6
 class Person {
     name: string;
@@ -72,3 +73,10 @@ class Student extends Person {
         return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
     }
 }
+
+
+//problem 7
+const getIntersection = (arr1: number[], arr2: number[]): number[] => {
+    const set2 = new Set(arr2);
+    return arr1.filter(number => set2.has(number));
+};
