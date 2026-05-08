@@ -17,3 +17,15 @@ const reverseString = (param: string) => {
 
 
 //problem 3
+type StringOrNumber = string | number;
+
+const checkType = (param: StringOrNumber) => {
+    if (typeof (param) === 'string') {
+        return "String"
+    }
+    else {
+        return "Number"
+    }
+}
+
+
